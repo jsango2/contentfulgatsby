@@ -48,11 +48,32 @@ module.exports = {
 			resolve: 'gatsby-source-contentful',
 			options: contentfulConfig,
 		},
+		// {
+		// 	resolve: 'gatsby-plugin-snipcartv3',
+		// 	options: {
+		// 		apiKey: process.env.SNIPCART_API_KEY,
+
+		// 		// autopop: true,
+		// 	},
+		// },
 		{
-			resolve: 'gatsby-plugin-snipcartv3',
+			resolve: `gatsby-plugin-snipcart-advanced`,
 			options: {
-				apiKey: process.env.SNIPCART_API_KEY,
-				// autopop: true,
+				version: '3.0.29',
+				publicApiKey: process.env.SNIPCART_API_KEY, // use public api key here or in environment variable
+				defaultLang: 'en',
+				currency: 'eur',
+				openCartOnAdd: false,
+				useSideCart: true,
+				// be careful with this mode cart. The cart in this mode has a bug of scroll in firefox
+
+				templatesUrl:
+					"path on your template file. Set file in the static folder, ex: '/snipcart/index.html'",
+				// not work on dev. Gatsby not serve html file in dev https://github.com/gatsbyjs/gatsby/issues/13072
+				innerHTML: `
+            <billing section="bottom">
+                <!-- Customization goes here -->
+            </billing>`,
 			},
 		},
 	],

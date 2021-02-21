@@ -24,14 +24,17 @@ class RootIndex extends React.Component {
 					className='snipcart-add-item'
 					data-item-id='ZadarNightRun2021'
 					data-item-price='100.00'
-					data-item-url='/'
+					data-item-url='https://nostalgic-leavitt-ea13f9.netlify.app'
 					data-item-description='Super trka'
 					data-item-image='https://images.medicaldaily.com/sites/medicaldaily.com/files/2017/02/14/race.jpg'
 					data-item-name='ZDNIGHTRUN'
+					data-config-modal-style='side'
 				>
 					Add to cart
 				</button>
-				<button className='snipcart-checkout'>Checkout</button>
+				<button className='snipcart-checkout' data-config-modal-style='side'>
+					Checkout
+				</button>
 			</Layout>
 		);
 
