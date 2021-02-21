@@ -21,17 +21,17 @@ class RootIndex extends React.Component {
 							}}
 						/> */}
 				<button
-					class='snipcart-add-item'
+					classNmae='snipcart-add-item'
 					data-item-id='ZadarNightRun2021'
 					data-item-price='100'
-					data-item-url='http://www.sportzone.hr'
+					data-item-url='https://nostalgic-leavitt-ea13f9.netlify.app'
 					data-item-description='Super trka'
-					data-item-image='/assets/images/starry-night.jpg'
+					data-item-image='https://images.medicaldaily.com/sites/medicaldaily.com/files/2017/02/14/race.jpg'
 					data-item-name='ZDNIGHTRUN'
 				>
 					Add to cart
 				</button>
-				<button class='snipcart-checkout'>Click here to checkout</button>
+				<button classNmae='snipcart-checkout'>Click here to checkout</button>
 			</>
 		);
 
