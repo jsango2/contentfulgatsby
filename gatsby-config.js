@@ -49,10 +49,10 @@ module.exports = {
 			options: contentfulConfig,
 		},
 		{
-			resolve: 'gatsby-plugin-snipcart',
+			resolve: 'gatsby-plugin-snipcartv3',
 			options: {
 				apiKey: process.env.SNIPCART_API_KEY,
-				autopop: true,
+				// autopop: true,
 			},
 		},
 	],

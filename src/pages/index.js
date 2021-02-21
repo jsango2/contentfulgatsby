@@ -9,7 +9,7 @@ import ArticlePreview from '../components/article-preview';
 class RootIndex extends React.Component {
 	render() {
 		return (
-			<>
+			<Layout location={this.props.location}>
 				<div>Blog Index</div>
 				<div className='snipcart-summary'>
 					Number of items: <span className='snipcart-total-items'></span>
@@ -24,22 +24,22 @@ class RootIndex extends React.Component {
 					className='snipcart-add-item'
 					data-item-id='ZadarNightRun2021'
 					data-item-price='100.00'
-					data-item-url='https://nostalgic-leavitt-ea13f9.netlify.app'
+					data-item-url='/'
 					data-item-description='Super trka'
 					data-item-image='https://images.medicaldaily.com/sites/medicaldaily.com/files/2017/02/14/race.jpg'
 					data-item-name='ZDNIGHTRUN'
 				>
 					Add to cart
 				</button>
-				<button className='snipcart-checkout'>Click here to checkout</button>
-			</>
+				<button className='snipcart-checkout'>Checkout</button>
+			</Layout>
 		);
 
 		// const siteTitle = get(this, 'props.data.site.siteMetadata.title')
 		// const posts = get(this, 'props.data.allContentfulBlogPost.edges')
 		// const [author] = get(this, 'props.data.allContentfulPerson.edges')
 		// return (
-		//   <Layout location={this.props.location}>
+		//   <Layout  >
 		//     <div style={{ background: '#fff' }}>
 		//       <Helmet title={siteTitle} />
 		//       <Hero data={author.node} />
