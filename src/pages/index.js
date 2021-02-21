@@ -26,7 +26,7 @@ class RootIndex extends React.Component {
 					data-item-price='100'
 					data-item-url='https://nostalgic-leavitt-ea13f9.netlify.app'
 					data-item-description='Super trka'
-					data-item-image='https://images.medicaldaily.com/sites/medicaldaily.com/files/2017/02/14/race.jpg'
+					// data-item-image='https://images.medicaldaily.com/sites/medicaldaily.com/files/2017/02/14/race.jpg'
 					data-item-name='ZDNIGHTRUN'
 				>
 					Add to cart
