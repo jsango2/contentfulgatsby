@@ -23,7 +23,7 @@ class RootIndex extends React.Component {
 				<button
 					classNmae='snipcart-add-item'
 					data-item-id='ZadarNightRun2021'
-					data-item-price='100'
+					data-item-price='100.00'
 					data-item-url='https://nostalgic-leavitt-ea13f9.netlify.app'
 					data-item-description='Super trka'
 					// data-item-image='https://images.medicaldaily.com/sites/medicaldaily.com/files/2017/02/14/race.jpg'
